@@ -1,4 +1,4 @@
-name: seqpred
+name: tetrapredx
 channels:
   - conda-forge
   - defaults

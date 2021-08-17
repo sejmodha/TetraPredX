@@ -171,7 +171,8 @@ def get_feature_table(infasta, out, tax_label, kmer, cpu, chunk):
 
     df = extract_feat(infasta, tax_label, kmer, cpu, chunk)
     # print(df)
-    df.to_csv(out+'_feat.csv.gz', compression='gzip', index=True, header=True)
+    # Save df to a file
+    # df.to_csv(out+'_feat.csv.gz', compression='gzip', index=True, header=True)
     return df
 
 
