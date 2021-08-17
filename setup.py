@@ -4,7 +4,8 @@ def readme():
     with open('README.md') as f:
         return f.read()
 
-setup(name='TetraPrediX',
+setup(name='TetraPredX',
+      packages=['TetraPredX'],
       description='Prediction tool to identify the class of unknown sequences assembled from metagenomes',
       long_description=readme(),
       long_description_content_type='text/markdown',
@@ -12,8 +13,7 @@ setup(name='TetraPrediX',
       author='Sejal Modha',
       author_email='s.modha.1@research.gla.ac.uk',
       url='https://github.com/sejmodha/TetraPredX',
-      download_url='https://github.com/sejmodha/TetraPredX/archive/refs/tags/1.0.tar.gz'
-      packages=['TetraPredX'],
+      download_url='https://github.com/sejmodha/TetraPredX/archive/refs/tags/1.0.tar.gz',
       install_requires=['biopython', 
                         'joblib', 
                         'sklearn=0.24.1',
