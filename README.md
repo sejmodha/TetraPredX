@@ -75,7 +75,6 @@ Train and save the models using `train.py`.
 python train.py -i input_csv_with_features_and_label -o output_prefix
 ```
 ***
-***
 
 #### Modules
 
