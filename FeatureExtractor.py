@@ -109,6 +109,8 @@ def batch_iterator(iterator, batch_size):
     This is a generator function, and it returns lists of the
     entries from the supplied iterator.  Each list will have
     batch_size entries, although the final list may be shorter.
+    
+    Taken from: https://biopython.org/wiki/Split_large_file
     """
     entry = True  # Make sure we loop once
     while entry:
@@ -172,7 +174,7 @@ def get_feature_table(infasta, out, tax_label, kmer, cpu, chunk):
     df = extract_feat(infasta, tax_label, kmer, cpu, chunk)
     # print(df)
     # Save df to a file
-    # df.to_csv(out+'_feat.csv.gz', compression='gzip', index=True, header=True)
+    df.to_csv(out+'_feat.csv.gz', compression='gzip', index=True, header=True)
     return df
 
 
