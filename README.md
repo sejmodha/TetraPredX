@@ -56,7 +56,7 @@ python predict.py -i test_zetavirus.fa -o test_out
 TetraPredX also supports training new models and using them for predictions.
 A pseudo example shows major steps required to train and save new models.
 
-**Note**: This process may require substantial computing power and could take a long time depending on the input data size.
+> **Note**: This process may require substantial computing power and could take a long time depending on the input data size.
 
 #### Step 1
 Extract features and their frequencies using `FeatureExtractor.py` script.
@@ -74,6 +74,11 @@ Train and save the models using `train.py`.
 # train new models
 python train.py -i input_csv_with_features_and_label -o output_prefix
 ```
+***
+***
+
+#### Modules
+
 `FeatureExtractor.py` and `TrainModels.py` contain a range of functions that can be used by importing them as standard python modules.
 e.g.,
 
@@ -83,6 +88,8 @@ import FeatureExtractor as ft
 # generate a feature table
 df = ft.get_feature_table(....)
 ```
+
+***
 
 #### Further details on functions:
 
