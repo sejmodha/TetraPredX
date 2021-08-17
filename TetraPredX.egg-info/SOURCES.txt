@@ -1,0 +1,8 @@
+README.md
+setup.cfg
+setup.py
+TetraPredX.egg-info/PKG-INFO
+TetraPredX.egg-info/SOURCES.txt
+TetraPredX.egg-info/dependency_links.txt
+TetraPredX.egg-info/requires.txt
+TetraPredX.egg-info/top_level.txt
