@@ -13,7 +13,7 @@ setup(name='TetraPrediX',
       author_email='s.modha.1@research.gla.ac.uk',
       url='https://github.com/sejmodha/TetraPredX',
       download_url='https://github.com/sejmodha/TetraPredX/archive/refs/tags/1.0.tar.gz'
-      packages=['TetraPredix'],
+      packages=['TetraPredX'],
       install_requires=['biopython', 
                         'joblib', 
                         'sklearn=0.24.1',
